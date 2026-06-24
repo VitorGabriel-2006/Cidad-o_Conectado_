@@ -31,8 +31,6 @@ import { useDocumentStore } from "@/store/useDocumentStore";
 import { calculateDocumentStatus } from "@/lib/documents";
 import { useTTSStore } from "@/store/useTTSStore";
 import { useAccessibilityStore } from "@/store/useAccessibilityStore";
-import { AccessibilityMenu } from "@/components/features/accessibility/AccessibilityMenu";
-import { FontSizeControl } from "@/components/features/accessibility/FontSizeControl";
 
 export function AppHeader() {
   const profile = useProfileStore((state) => state.profile);
@@ -153,8 +151,6 @@ export function AppHeader() {
           </Button>
         )}
 
-        {mounted && <FontSizeControl />}
-
         {mounted && (
           <Link href="/alertas">
             <Button variant="ghost" size="icon" aria-label="Central de Alertas" className="relative rounded-full hover:bg-muted" title="Central de Alertas">
@@ -165,8 +161,6 @@ export function AppHeader() {
             </Button>
           </Link>
         )}
-
-        <AccessibilityMenu />
         
         {!mounted ? (
           <div className="w-8 h-8 rounded-full bg-muted animate-pulse" />
