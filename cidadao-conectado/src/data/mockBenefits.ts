@@ -102,6 +102,7 @@ export interface Benefit {
   steps?: string[];
   applicationSteps?: ProcessStep[];
   paymentDates?: string[];
+  renewalDate?: string;
   updates?: BenefitUpdate[];
   incompatibilities?: string[];
   orgaoResponsavel?: string;
