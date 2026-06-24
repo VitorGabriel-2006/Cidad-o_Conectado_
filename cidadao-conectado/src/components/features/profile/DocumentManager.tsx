@@ -90,7 +90,7 @@ export function DocumentManager() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="docName">Nome do Documento *</Label>
-                  <Select onValueChange={setNewDocName} value={newDocName}>
+                  <Select onValueChange={(val) => val && setNewDocName(val)} value={newDocName}>
                     <SelectTrigger id="docName">
                       <SelectValue placeholder="Selecione ou digite..." />
                     </SelectTrigger>
@@ -116,7 +116,7 @@ export function DocumentManager() {
 
                 <div className="space-y-2 md:col-span-2">
                   <Label htmlFor="docBenefit">Benefício Afetado Principal</Label>
-                  <Select onValueChange={setSelectedBenefit} value={selectedBenefit}>
+                  <Select onValueChange={(val) => val && setSelectedBenefit(val)} value={selectedBenefit}>
                     <SelectTrigger id="docBenefit">
                       <SelectValue placeholder="Aplicável a todos (Padrão)" />
                     </SelectTrigger>

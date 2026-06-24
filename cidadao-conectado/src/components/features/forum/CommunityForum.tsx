@@ -67,7 +67,7 @@ export function CommunityForum() {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
-          <Select value={topicFilter} onValueChange={setTopicFilter}>
+          <Select value={topicFilter} onValueChange={(val) => val && setTopicFilter(val)}>
             <SelectTrigger className="w-[160px] bg-background">
               <Filter className="w-4 h-4 mr-2 text-muted-foreground" />
               <SelectValue placeholder="Tópico" />

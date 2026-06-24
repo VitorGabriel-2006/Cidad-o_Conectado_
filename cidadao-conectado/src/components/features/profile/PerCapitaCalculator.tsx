@@ -122,7 +122,7 @@ export function PerCapitaCalculator({ initialMembers, onApply }: PerCapitaCalcul
         </DialogHeader>
 
         <div className="space-y-6 py-4">
-          <Accordion type="single" className="w-full bg-muted/30 rounded-lg px-4 border border-border/50">
+          <Accordion className="w-full bg-muted/30 rounded-lg px-4 border border-border/50">
             <AccordionItem value="o-que-e-renda" className="border-none">
               <AccordionTrigger className="text-sm font-medium hover:no-underline py-3">
                 <div className="flex items-center gap-2 text-primary">

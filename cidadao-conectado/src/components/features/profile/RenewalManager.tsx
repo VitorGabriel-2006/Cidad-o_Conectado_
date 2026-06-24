@@ -56,7 +56,7 @@ export function RenewalManager() {
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6 bg-muted/30 p-4 rounded-xl border border-border/40">
         <div className="space-y-2 md:col-span-2">
           <Label htmlFor="benefitSelect" className="text-xs text-muted-foreground uppercase tracking-wider">Benefício</Label>
-          <Select value={selectedBenefit} onValueChange={setSelectedBenefit} name="benefitSelect">
+          <Select value={selectedBenefit} onValueChange={(val) => val && setSelectedBenefit(val)} name="benefitSelect">
             <SelectTrigger className="bg-background">
               <SelectValue placeholder="Selecione um benefício" />
             </SelectTrigger>
@@ -84,7 +84,7 @@ export function RenewalManager() {
 
         <div className="space-y-2">
           <Label htmlFor="periodicity" className="text-xs text-muted-foreground uppercase tracking-wider">Frequência</Label>
-          <Select value={periodicity} onValueChange={setPeriodicity} name="periodicity">
+          <Select value={periodicity} onValueChange={(val) => val && setPeriodicity(val)} name="periodicity">
             <SelectTrigger className="bg-background">
               <SelectValue placeholder="Frequência" />
             </SelectTrigger>

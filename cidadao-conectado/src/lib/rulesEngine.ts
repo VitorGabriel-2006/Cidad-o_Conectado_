@@ -99,7 +99,7 @@ export function calculateRelevanceScore(benefit: Benefit, profile: ProfileData |
   }
   
   // Regra: Famílias
-  if (profile.familyMembers > 1 && benefit.targetGroups.includes("Famílias")) {
+  if (Number(profile.familyMembers) > 1 && benefit.targetGroups.includes("Famílias")) {
     score += 5;
   }
   
