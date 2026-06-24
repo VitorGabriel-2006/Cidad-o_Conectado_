@@ -180,7 +180,7 @@ export function ScheduleView({ favoriteBenefits }: ScheduleViewProps) {
               <h3 className="font-bold text-lg capitalize">{month}</h3>
             </div>
             
-            <Accordion type="multiple" className="w-full">
+            <Accordion className="w-full">
               {monthEvents.map((event) => {
                 const todayHighlight = isToday(event.originalDate);
                 const dayFormatter = new Intl.DateTimeFormat("pt-BR", { day: "2-digit", weekday: "short" });
