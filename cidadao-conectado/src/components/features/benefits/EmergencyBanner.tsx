@@ -79,7 +79,7 @@ export function EmergencyBanner() {
         </a>
       </div>
 
-      <Accordion type="single" collapsible className="w-full bg-background/40 rounded-xl mb-6 border border-border/50">
+      <Accordion className="w-full bg-background/40 rounded-xl mb-6 border border-border/50">
         <AccordionItem value="passos" className="border-none">
           <AccordionTrigger className="px-4 py-3 hover:no-underline hover:bg-background/20 rounded-xl font-semibold">
             Primeiros Passos em Caso de Calamidade
