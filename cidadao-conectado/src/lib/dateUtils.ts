@@ -1,6 +1,8 @@
 export interface EnrollmentPeriod {
   startDate?: string; // YYYY-MM-DD
   endDate?: string;   // YYYY-MM-DD
+  start?: string;     // YYYY-MM-DD
+  end?: string;       // YYYY-MM-DD
   isContinuous: boolean;
 }
 
